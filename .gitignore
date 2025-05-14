@@ -1,0 +1,15 @@
+.gitignore
+bert_model.py
+bert2_model.py
+desktop.ini
+get_attach.cpython
+__pycache__/
+ttt.py
+tt.py
+simple_nlp.py
+run_in_bg.py
+*.env
+multi-model.py
+nlp pipe.py
+phishy_email_generator.py
+saved_models/
