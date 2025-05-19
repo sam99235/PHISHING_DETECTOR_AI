@@ -158,7 +158,7 @@ while not stop:
         try:
             from phishy_emails_detector import test_emails
             import art
-            print(art.text2art("PHISHING-DETECTOR"),"\n","by oussama mejdoubi\nBUG REPORT->\tLINKEDIN:https://www.linkedin.com/in/oussama-mejdoubi")
+            print(art.text2art("PHISHING-DETECTOR"),"\n","by oussama mejdoubi\nBUG REPORT->\tLINKEDIN:https://github.com/sam99235/PHISHING_DETECTOR_AI/issues")
             stop=True
             test_emails(email=body,subject=subject,links=links,sender_email=from_)
             sys.exit(0)
