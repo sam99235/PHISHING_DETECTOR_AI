@@ -3,4 +3,4 @@ a software to detect phishy emails using AI as well as third party tools to scan
 # how to use
 download all files in a directory and within the directory:
 # main.py --help
-##there's a pre-release as an exe file that needs some improvments
+##there's a pre-release software but it needs some improvments
