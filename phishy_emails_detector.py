@@ -11,18 +11,26 @@ from sklearn.metrics import accuracy_score,classification_report
 import joblib,os
 from termcolor import colored
 from main import DEBUG
+from datasets import load_dataset
 
-df1 = pd.read_csv("D:\\Desktop\\internship\\emails_dataset\\combined_phishy_emails.csv")
-if DEBUG:print("NOTE=======>DATASET-1 IS LOADED")
+# Load two CSV files as separate splits from the same dataset repo
+dataset = load_dataset(
+    "holyno/phishing_datasets",
+    data_files={
+        "a": "email_dataset1.csv",
+        "b": "email_dataset2.csv"
+    }
+)
 
-df2 = pd.read_csv("D:\\Desktop\\internship\\code\\cleaned_data.csv")
-if DEBUG:print("NOTE=======>DATASET-2 IS LOADED")
+# Convert splits to pandas DataFrames
+df_a = dataset["a"].to_pandas()
+df_b = dataset["b"].to_pandas()
 
 
 
 # Combining text and labels
-combined_series = pd.concat([df1['text_combined'], df2['body']], ignore_index=True)
-combined_labels = pd.concat([df1['label'], df2['label']], ignore_index=True)
+combined_series = pd.concat([df_a['text_combined'], df_b['body']], ignore_index=True)
+combined_labels = pd.concat([df1_a['label'], df_b['label']], ignore_index=True)
 
 # Create a DataFrame to handle both together
 combined_df = pd.DataFrame({'text': combined_series, 'label': combined_labels})
