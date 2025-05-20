@@ -50,8 +50,8 @@ y = combined_df['label']
 
 ####for subjects only
 #emails of emails: 82486  
-A = df2["subject"]
-b = df2["label"]
+A = df_b["subject"]
+b = df_b["label"]
 # labels
 # 1    42891 spam
 # 0    39595 not spam
