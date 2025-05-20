@@ -125,6 +125,26 @@ python main.py -runbg
 # Remove from startup if needed
 python main.py -rmvbg
 ```
+## 🔐 Third-Party API Integration
+
+To enhance phishing detection, this tool can integrate with third-party APIs to scan URLs and evaluate sender reputation.
+
+You need to obtain API keys from the following providers:
+
+* [VirusTotal](https://www.virustotal.com/)
+* [IPQualityScore](https://www.ipqualityscore.com/)
+
+Once you have your API keys, set them securely using environment variables or a configuration file.
+
+### Example: Setting API keys via environment variables
+
+**For Windows**
+
+```cmd
+set URL_SCANNER_API_KEY=your_virustotal_api_key
+set EMAIL_SCANNER_API_KEY=your_ipqualityscore_api_key
+```
+
 
 ## Prerequisites
 
