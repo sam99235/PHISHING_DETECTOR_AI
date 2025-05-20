@@ -15,7 +15,7 @@ from datasets import load_dataset
 
 # Load two CSV files as separate splits from the same dataset repo
 dataset = load_dataset(
-    "holyno/phishing_datasets",
+    "holyno/phishy_email_detector",
     data_files={
         "a": "email_dataset1.csv",
         "b": "email_dataset2.csv"
