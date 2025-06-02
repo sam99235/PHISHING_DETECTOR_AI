@@ -1,7 +1,7 @@
 # Email_Scanner
 
 A command-line email monitoring tool that connects to IMAP servers, detects phishing using AI, scans embedded links with third-party tools, and checks sender reputation — perfect for automated, real-time inbox security.
-![Image description](https://github.com/sam99235/PHISHING_DETECTOR_AI/blob/917e70c3a8017694100d36538c43fd61b717782d/cl_interface.png)
+![Image description](https://github.com/sam99235/PHISHING_DETECTOR_AI/blob/3d5c0c20d95e32243c9ffd2a8e0fbe6979d3f7c1/cl_interface.png)
 ## Features
 
 - Connect to popular IMAP servers (Gmail, Outlook, Yahoo, etc.)
