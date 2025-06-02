@@ -1,4 +1,4 @@
-# ![Email Icon](https://github.com/sam99235/PHISHING_DETECTOR_AI/blob/bcba700eab58dfa812aec32bbdfb02f3389a07ff/phishing.ico)  Email_Scanner
+# Email_Scanner
 
 A command-line email monitoring tool that connects to IMAP servers, detects phishing using AI, scans embedded links with third-party tools, and checks sender reputation — perfect for automated, real-time inbox security.
 
